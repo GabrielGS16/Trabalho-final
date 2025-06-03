@@ -3,22 +3,17 @@
 include('conexao.php');
 
 if (isset($_POST['email']) && isset($_POST['senha'])) {
-     //informação que diz que o email não foi digitado
     if (empty($_POST['email'])) {
         echo "Preencha seu e-mail";
-    // informação que fala que a senha não foi digitada
     } elseif (empty($_POST['senha'])) {
         echo "Preencha sua senha";
     } else {
-        //Essas linhas pegam o valor do campo email e senha enviado por um formulário HTML usando o método POST.
         $email = $_POST['email'];
         $senha = $_POST['senha'];
-         //ele prepara e seleciona tudo da tabela login (where adiciona uma condição) email e senha 
         $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email AND senha = :senha");
-        //aqui o valor das variasveis muda
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':senha', $senha);
-        //executa
+       
         $stmt->execute();
         
         if ($stmt->rowCount() === 1) {
