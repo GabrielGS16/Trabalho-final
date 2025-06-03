@@ -1,5 +1,4 @@
 <?php
-//variaveis
 $usuario = 'root';
 $senha = '';
 $database = 'login';
