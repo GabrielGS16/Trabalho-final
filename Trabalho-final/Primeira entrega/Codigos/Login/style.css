@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo do body */
+body {
+    background: linear-gradient(120deg, #e6f4ea, #fff0f5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título */
+#titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#titulo h1 {
+    font-size: 2em;
+    color: #4CAF50; /* Verde */
+}
+
+/* Estilo do formulário */
+#formulario {
+    background-color: #ffffff; /* Branco */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #E91E63; /* Rosa */
+}
+
+#formulario form p {
+    margin-bottom: 15px;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4CAF50; /* Verde */
+}
+
+#formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+#formulario input:focus {
+    border-color: #E91E63; /* Rosa */
+    outline: none;
+}
+
+#formulario button {
+    width: 100%;
+    background-color: #E91E63; /* Rosa */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#formulario button:hover {
+    background-color: #c2185b; /* Rosa escuro */
+}
+
+/* Mensagens */
+#if {
+    margin-bottom: 20px;
+    color: #c2185b;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Painel do usuário */
+h2 {
+    font-size: 1.5em;
+    color: #4CAF50; /* Verde */
+    text-align: center;
+    margin-top: 40px;
+}
