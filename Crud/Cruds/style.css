@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 120vh;           
+   background: linear-gradient(120deg, #e6f4ea, #fff0f5);
+}
+#formulario{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 220px;
+    align-items: center;
+    display: flex;
+    border: solid #E91E63;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}   
+h1{
+    text-align: center;
+
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+.label{
+    color: #4CAF50;
+    align-items: center;
+}
+#formulario form p {
+    margin-bottom: 15px;
+}
