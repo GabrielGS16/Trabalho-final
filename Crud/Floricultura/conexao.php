@@ -1,17 +1,13 @@
 <?php
-$usuario = "root";
-$senha = "aluno";
-$dbname = "floricultura";
-$host = "localhost";
-$port = 3307;
-
-
+$host = 'localhost';
+$db = 'floricultura';
+$user = 'root';
+$pass = '';
 
 try {
-   $pdo = new PDO("mysql:host=$host;rt;dbname=$dbname;port:$port;", $usuario, $senha);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+} catch (PDOException $e) {
+    echo "Erro na conexão: " . $e->getMessage();
 }
-catch (PDOException $e) {
-        echo "Erro na conexão: " . $e->getMessage();
-}
+
 ?>
