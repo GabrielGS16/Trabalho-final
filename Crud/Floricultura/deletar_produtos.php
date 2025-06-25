@@ -26,6 +26,6 @@ if (isset($_GET['id'])) {
     <link rel="stylesheet" href="deletarproduto.css">
 </head>
 <body>
-    
+     <button id="voltar"><a href="painel.php">Voltar</a></button>
 </body>
 </html>

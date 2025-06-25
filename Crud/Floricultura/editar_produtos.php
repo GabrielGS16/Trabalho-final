@@ -68,5 +68,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <button type="submit">Cadastrar</button>
     </form>
+   <a href="visualizar_usuario.php">Voltar</a>
 </body>
 </html>
