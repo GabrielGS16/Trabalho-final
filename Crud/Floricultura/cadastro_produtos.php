@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="cadastroproduto.css">
 </head>
 <body>
+    <div>
+
+   
+<h1>Cadastro de Produtos</h1>
+<nav>
 <?php
 include('conexao.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -35,19 +41,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-    <h1>Cadastro de Produtos</h1>
-    <form method="POST" action="">
-        <label >Nome:</label>
-        <input type="text" name="nome" required>
+     <div class="container">
+     
+        <form method="POST" action="">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
 
-        <label >Valor:</label>
-        <input type="text" name="valor" required>
+            <label>Valor:</label>
+            <input type="text" name="valor" required>
 
-        <label >Descrição:</label>
-        <textarea name="descricao" required></textarea>
+            <label>Descrição:</label>
+            <textarea name="descricao" required></textarea>
 
-        <button type="submit">Cadastrar</button>
-    </form>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
 </body>
 </html>
 

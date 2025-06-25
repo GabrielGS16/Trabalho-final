@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #E91E63, #4CAF50);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
